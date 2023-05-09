@@ -2,14 +2,14 @@
     
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <a href="https://flowbite.com" class="flex items-center">
+        <RouterLink to="/" class="flex items-center">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SCredit MS</span>
-        </a>
+        </RouterLink>
         <div class="flex items-center">
             <a href="tel:5541251234" class="mr-6 text-sm  text-gray-500 dark:text-white hover:underline"><i class='bx bxs-cart-alt text-3xl '></i>
 
             </a>
-            <a href="#" class="text-sm  text-blue-600 dark:text-white bg-blue-800 py-2 px-3 rounded-lg "><i class='bx bxs-lock' ></i> Login</a>
+            <RouterLink to="/login" class="text-sm  text-blue-600 dark:text-white bg-blue-800 py-2 px-3 rounded-lg "><i class='bx bxs-lock' ></i> Login</RouterLink>
         </div>
     </div>
 </nav>
@@ -36,9 +36,12 @@
 
 </template>
 <script lang="ts">
+import {RouterLink} from 'vue-router';
 import {defineComponent} from 'vue';
 export default defineComponent({
-    
+    components:{
+        RouterLink
+    }
 })
 </script>
 <style lang="">
