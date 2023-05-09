@@ -6,9 +6,10 @@
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SCredit MS</span>
         </a>
         <div class="flex items-center">
-            <a href="tel:5541251234" class="mr-6 text-sm  text-gray-500 dark:text-white hover:underline">cart here
+            <a href="tel:5541251234" class="mr-6 text-sm  text-gray-500 dark:text-white hover:underline"><i class='bx bxs-cart-alt text-3xl '></i>
+
             </a>
-            <a href="#" class="text-sm  text-blue-600 dark:text-white bg-blue-800 py-2 px-3 rounded-lg ">Login</a>
+            <a href="#" class="text-sm  text-blue-600 dark:text-white bg-blue-800 py-2 px-3 rounded-lg "><i class='bx bxs-lock' ></i> Login</a>
         </div>
     </div>
 </nav>
@@ -20,7 +21,7 @@
                     <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline">Company</a>
+                    <a href="#" class="text-gray-900 dark:text-white hover:underline">Items</a>
                 </li>
                 <li>
                     <a href="#" class="text-gray-900 dark:text-white hover:underline">Team</a>
