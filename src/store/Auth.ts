@@ -24,8 +24,10 @@ export const  useAuthStore = defineStore('Auth',{
             }).then(res => {
                
                 if(res && res.status == 200) {
+                    console.log(res.data.token);
                     localStorage.setItem('sanctum-token',res.data.token);
-                    router.push('/dashboard');
+                    // router.push('/dashboard');
+                    location.href = "/dashboard";
                 }    
                 
                 this.isLoading = false;

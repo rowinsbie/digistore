@@ -5,6 +5,7 @@
 </template>
 <script lang="ts">
 import {defineComponent} from 'vue';
+import http from '../http';
 export default defineComponent({
     name:"dashboard",
     data() {
@@ -13,7 +14,11 @@ export default defineComponent({
         }
     },
     mounted() {
-        console.log("it's working");
+        http.get('/user').then(res => {
+            console.log(res);
+        }).catch((error) => {
+            return Promise.reject(error)
+        })
     }
 });
 </script>
