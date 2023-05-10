@@ -9,7 +9,8 @@
             <a href="tel:5541251234" class="mr-6 text-sm  text-gray-500 dark:text-white hover:underline"><i class='bx bxs-cart-alt text-3xl '></i>
 
             </a>
-            <RouterLink to="/login" class="text-sm  text-blue-600 dark:text-white bg-blue-800 py-2 px-3 rounded-lg "><i class='bx bxs-lock' ></i> Login</RouterLink>
+            <RouterLink to="/login" class="text-sm  text-blue-600 dark:text-white  py-2 px-3 rounded-lg "><i class='bx bxs-user-circle text-3xl'></i> </RouterLink>
+            
         </div>
     </div>
 </nav>

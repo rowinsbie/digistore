@@ -39,7 +39,7 @@ export default defineComponent({
 });
 </script>
 <template>
-    <section class="bg-white py-40">
+    <section :class="Auth.isLoading ? ' animate-pulse pointer-events-none ' : ''" class="bg-white py-40 ">
         <div class="flex flex-col items-center justify-center px-2 py-2 mx-auto md:h-auto lg:py-0">
         
             <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">

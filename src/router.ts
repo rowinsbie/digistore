@@ -51,7 +51,7 @@ router.beforeEach((to,from,next) => {
    access a page other than the login page (`to.name !== 'Login'`), it redirects the user to the
    login page (`next({ name: 'Login' })`). Otherwise, it allows the user to proceed to the requested
    page (`else next()`). */
-    if (to.name !== 'Login' && !localStorage.getItem('sanctum-token')) next({ name: 'Login' })
+    if (to.meta.requiresAuth && to.name !== 'Login' && !localStorage.getItem('sanctum-token')) next({ name: 'Login' })
     else next()
    
 })
