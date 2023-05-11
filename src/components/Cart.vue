@@ -1,9 +1,9 @@
 <template lang="">
     <h1 class="mb-10 text-center text-2xl font-bold">Cart Items</h1>
     <div
-      class=" max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0"
+      class=" max-w-5xl justify-center px-6 md:flex md:flex-col lg:flex-row md:space-x-6 xl:px-0"
     >
-      <div class="rounded-lg md:w-2/3">
+      <div class="rounded-lg sm:max-w-2sm lg:w-2/3  ">
         <div
           class="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start"
         >
@@ -115,7 +115,7 @@
       </div>
       <!-- Sub total -->
       <div
-        class="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3"
+        class="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 sm:w-1/3 md:w-full lg:w-1/3"
       >
         <div class="mb-2 flex justify-between">
           <p class="text-gray-700">Subtotal</p>

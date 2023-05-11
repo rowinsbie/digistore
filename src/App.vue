@@ -24,13 +24,15 @@ export default  defineComponent({
 
 <template>
   
-    <NavBar />
-    <div class="flex mt-40 gap-2 mx-auto md:max-w-7xl">
-      <SideBar v-if="Auth.isLoggedIn" class="h-screen sticky top-0" />
+    <div class=" ">
+      <NavBar />
+    <div class="flex pt-40 gap-2  md:mx-auto md:max-w-7xl bg-">
+      <SideBar v-if="Auth.isLoggedIn" class="h-screen sticky top-0 sm:hidden md:block" />
 
       <div class=" w-full" >
         <RouterView></RouterView>
       </div>
+    </div>
     </div>
   
 </template>
