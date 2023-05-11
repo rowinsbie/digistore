@@ -10,6 +10,7 @@ application to manage authentication-related state. */
 export const  useAuthStore = defineStore('Auth',{
     state:() => {
        return {
+        isLoggedIn:localStorage.getItem('sanctum-token'),
         isLoading:false,
         errorMessage:null
        }
