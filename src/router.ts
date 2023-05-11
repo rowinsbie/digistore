@@ -3,7 +3,8 @@ import type {RouteRecordRaw} from 'vue-router';
 import DashboardPage from './pages/DashboardPage.vue';
 import HomePage from './pages/HomePage.vue';
 import LoginPage from './pages/LoginPage.vue';
-
+import CartPage from './pages/CartPage.vue';
+import NetworkError from './pages/errors/NetworkError.vue';
 const routes : Array<RouteRecordRaw> = [
     {
         path:"/",
@@ -36,6 +37,17 @@ const routes : Array<RouteRecordRaw> = [
         meta:{
             requiresAuth:true
         }
+    },
+    {
+        path:'/cart',
+        name:'Cart',
+        component:CartPage
+    },
+
+    {
+        path:'/network-error',
+        name:'NetworkError',
+        component:NetworkError
     }
 ]
 const router = createRouter({

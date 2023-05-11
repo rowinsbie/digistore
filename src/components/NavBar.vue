@@ -7,9 +7,9 @@
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SCredit MS</span>
             </RouterLink>
             <div class="flex items-center">
-                <a href="tel:5541251234" class="mr-6 text-sm  text-gray-500 dark:text-white hover:underline"><i class='bx bxs-cart-alt text-3xl '></i>
+                <RouterLink to="/cart" class="mr-6 text-sm  text-gray-500 dark:text-white hover:underline hover:bg-violet-700 px-1 rounded-full "><i class='bx bxs-cart-alt text-3xl '></i>
     
-                </a>
+                </RouterLink>
                 <RouterLink to="/login" class="text-sm  text-blue-600 dark:text-white  py-2 px-3 rounded-lg "><i class='bx bxs-user-circle text-3xl'></i> </RouterLink>
                 
             </div>
@@ -20,16 +20,16 @@
             <div class="flex items-center">
                 <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                        <RouterLink to="/" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</RouterLink>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Items</a>
+                        <RouterLink to="/" class="text-gray-900 dark:text-white hover:underline">Items</RouterLink>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Team</a>
+                        <RouterLink to="/" class="text-gray-900 dark:text-white hover:underline">Team</RouterLink>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Features</a>
+                        <RouterLink to="/" class="text-gray-900 dark:text-white hover:underline">Features</RouterLink>
                     </li>
                 </ul>
             </div>

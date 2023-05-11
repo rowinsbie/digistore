@@ -1,10 +1,4 @@
 <template lang="">
-  <nav class="bg-white border-gray-200 mx-auto max-w-7xl">
-    <div class="flex flex-wrap gap-10 mt-40">
-      <SideBar />
-      <Cart />
-    </div>
-  </nav>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -15,7 +9,7 @@ export default defineComponent({
   name: "dashboard",
   components: {
     SideBar,
-    Cart
+    Cart,
   },
   data() {
     return {};
