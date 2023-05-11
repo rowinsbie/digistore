@@ -4,7 +4,7 @@
     <nav class="bg-white border-gray-200 dark:bg-gradient-to-r from-slate-800 to-slate-900">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl  p-4">
             <RouterLink to="/" class="flex items-center">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sari-sari Store Digital</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DigiStore</span>
             </RouterLink>
             <div class="flex items-center">
                 <RouterLink to="/cart" class="mr-6 text-sm  text-gray-500 dark:text-white hover:underline hover:bg-gray-700 px-1 rounded-full "><i class='bx bxs-cart-alt text-3xl '></i>
