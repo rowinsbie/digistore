@@ -5,6 +5,9 @@ const Redirect = (http_code:number) => {
         case 0:
             router.push({name:"NetworkError"});
             break;
+        case 500:
+            router.push({name:"InternalServerError"});
+            break;
         case 401:
             const token = localStorage.getItem('sanctum-token');
             if(token != null) {

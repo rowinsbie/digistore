@@ -4,7 +4,10 @@ import DashboardPage from './pages/DashboardPage.vue';
 import HomePage from './pages/HomePage.vue';
 import LoginPage from './pages/LoginPage.vue';
 import CartPage from './pages/CartPage.vue';
+import NewProductPage from './pages/NewProductPage.vue';
+
 import NetworkError from './pages/errors/NetworkError.vue';
+import InternalServerError from './pages/errors/InternalServerError.vue';
 const routes : Array<RouteRecordRaw> = [
     {
         path:"/",
@@ -41,13 +44,29 @@ const routes : Array<RouteRecordRaw> = [
     {
         path:'/cart',
         name:'Cart',
-        component:CartPage
+        component:CartPage,
+        meta:{
+            requiresAuth:true
+        }
+    },
+    {
+        path:'/create-product',
+        name:'Product',
+        component:NewProductPage,
+        meta:{
+            requiresAuth:true
+        }
     },
 
     {
         path:'/network-error',
         name:'NetworkError',
         component:NetworkError
+    },
+    {
+        path:'/500-error',
+        name:'InternalServerError',
+        component:InternalServerError
     }
 ]
 const router = createRouter({

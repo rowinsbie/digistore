@@ -2,7 +2,7 @@
   <div id="card" class="relative w-full h-60 rounded-2xl font-mono text-white overflow-hidden cursor-pointer transition-all duration-500" style="transition: 0.6s;transform-style: preserve-3d;">
 
     <!-- Front content -->
-    <div class="  absolute top-0 left-0 w-full h-full flex flex-col justify-center gap-6 p-6 bg-gradient-to-r from-slate-800 to-slate-900 transition-all duration-100 delay-200 z-20" style="transform: rotateY(0deg);">
+    <div class="  absolute sm:px-9 top-0 left-0 w-full h-full flex flex-col justify-center gap-6 p-6 bg-gradient-to-r from-slate-800 to-slate-900 transition-all duration-100 delay-200 z-20" style="transform: rotateY(0deg);">
 
       <div class="flex justify-between items-center">
         <img src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png" alt='Smart card' class="w-12">
