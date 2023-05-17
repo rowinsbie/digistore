@@ -26,8 +26,8 @@ export default  defineComponent({
   
     <div class=" ">
       <NavBar />
-    <div class="flex pt-40 gap-2  md:mx-auto md:max-w-7xl bg-">
-      <SideBar v-if="Auth.isLoggedIn" class="h-screen sticky top-0 sm:hidden md:block" />
+    <div class="flex pt-40 gap-2  md:mx-auto " :class="Auth.isLoggedIn ? ' w-full md:px-20' : 'md:max-w-7xl'">
+      <SideBar v-if="Auth.isLoggedIn"  />
 
       <div class=" w-full" >
         <RouterView></RouterView>

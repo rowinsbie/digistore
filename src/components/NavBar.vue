@@ -2,7 +2,7 @@
     
 <div class="fixed top-0 left-0 right-0 z-50">
     <nav class="bg-white border-gray-200 dark:bg-gradient-to-r from-slate-800 to-slate-900">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl  p-4">
+        <div class="flex flex-wrap justify-between items-center mx-auto   p-4" :class="isLoggedIn ? ' max-w-full md:px-20' : 'max-w-screen-xl'">
             <RouterLink to="/" class="flex items-center">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DigiStore</span>
             </RouterLink>
@@ -16,7 +16,7 @@
         </div>
     </nav>
     <nav class="bg-gray-50 dark:white ">
-        <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class=" px-4 py-3 mx-auto" :class="isLoggedIn ? ' max-w-full md:px-20' : 'max-w-screen-xl'">
             <div class="flex items-center">
                 <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
                     <li>
