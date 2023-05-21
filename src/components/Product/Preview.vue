@@ -1,38 +1,54 @@
 <template lang="">
  
-<div class="w-full max-h-min max-w-lg bg-white rounded-lg shadow  dark:border-gray-700">
-    <div class="p-4">
-        <h2 class=" font-bold text-2xl"><i class='bx bx-image-alt'></i> Product Preview</h2>
+<div class="w-full   lg:max-w-2xl bg-white rounded-lg   ">
+   <div class="border">
+    <div class="p-3 dark:bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+        <h2 class=" font-bold text-2xl"><i class='bx bx-image-alt'></i> Product Pictures </h2>
     </div>
-    <a href="#" class="mx-auto flex justify-center">
-        <img class="p-8 rounded-t-lg" src="https://flowbite.com/docs/images/products/apple-watch.png" width="80%" alt="product image" />
-    </a>
-    <div class="px-5 pb-5">
-        <a href="#">
-            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-black">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900 dark:text-black">$599</span>
-            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+    <div v-if="pictures.length <= 0">
+        <div class="flex justify-center px-10 pb-10 pt-10">
+          <div class="text-center ">
+            <div class="flex justify-center">
+                <img src="./images/noproduct.png" alt="No Product" class="w-80" width="80%" height="80%">
+
+            </div>
+            <h1 class="font-bold text-md">No product pictures</h1>
+            <p>You can review your product pictures here before you save them to the system.</p>
+          </div>
         </div>
     </div>
+    <div v-else class="grid grid-cols-1 md:grid-cols-2 overflow-y-scroll	overflow-x-hidden	 max-h-96 h-fit bg-slate-700	">
+        <div  v-for="(pic,index) in pictures" :key="index" class=" pb-10">
+            <img class=" w-full h-full" :src="pic" height="100%" width="100%" alt="product image" />
+            <div class="flex justify-end pr-5 py-2 relative bg-slate-800">
+                <i class='bx bxs-x-circle bg-red-600 px-4 rounded-md cursor-pointer text-teal-50 py-1'></i>
+            </div>
+        </div>
+            
+    </div>
+   </div>
+
+   <div  class="border mt-3">
+    <div class="p-3 dark:bg-red-600 text-white">
+        <h2 class=" font-bold text-2xl"><i class='bx bx-exclude' ></i>Unacceptable file  </h2>
+    </div>
+    <div class="flex">
+        <div class="px-8 py-3">
+            <p class="text-sm font-bold text-red-400">We excluded the files below because they do not follow the standard.</p>
+        </div>
+    </div>
+   </div>
+   
 </div>
 
 </template>
 <script lang="ts">
 import {defineComponent} from 'vue';
 export default defineComponent({
+    props:['pictures','invalidFiles'],
     data() {
         return {
-
+         
         }
     }  
 })
