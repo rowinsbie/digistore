@@ -28,13 +28,18 @@
     </div>
    </div>
 
-   <div  class="border mt-3">
+   <div v-if="invalidFiles.length >= 1" class="border mt-3">
     <div class="p-3 dark:bg-red-600 text-white">
         <h2 class=" font-bold text-2xl"><i class='bx bx-exclude' ></i>Unacceptable file  </h2>
     </div>
     <div class="flex">
         <div class="px-8 py-3">
-            <p class="text-sm font-bold text-red-400">We excluded the files below because they do not follow the standard.</p>
+            <p class="text-sm font-bold text-red-400">We excluded the files below because they do not follow the standard format.</p>
+            <ul class="mt-3">
+                <li  v-for="(file,index) in invalidFiles" :key="index" class="border px-4 py-2">
+                    {{file.name}}
+                </li>
+            </ul>
         </div>
     </div>
    </div>

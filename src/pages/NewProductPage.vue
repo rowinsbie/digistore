@@ -102,12 +102,19 @@
                   >Description</label
                 >
                 <textarea
+                v-model="state.product.description"
                   rows="5"
                   type="text"
                   id="small-input"
                   class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Enter product description"
                 ></textarea>
+                <span
+                v-if="v$.product.description.$error"
+                class="text-red-700 font-bold text-sm"
+              >
+                {{ v$.product.description.$errors[0].$message }}
+              </span>
               </div>
 
               <div class="mb-3 mt-4">
@@ -257,7 +264,16 @@ export default defineComponent({
       this.v$.$validate();
       console.log(this.state);
       if (!this.v$.$error) {
-        alert("yeah");
+    
+        // test
+        http.post('/upload',{
+          data:this.state.product
+        }).then(res => {
+          console.log(res);
+        }).catch(err => {
+          console.log(err);
+        });
+
       } else {
       }
     },
