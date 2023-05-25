@@ -226,6 +226,13 @@ export default defineComponent({
 
     const v$ = useVuelidate(rules, state);
 
+  // This code defines a function called `selectPictures` that is triggered when a user selects one or
+  // more image files. It first checks if any files were selected and returns if there are none. It
+  // then loops through each selected file and checks if it has an allowed file extension (jpg, jpeg,
+  // png, or gif). If the file has an allowed extension, it creates a new `FileReader` object and reads
+  // the file as a data URL. The resulting data URL is then pushed to the `state.product.pictures`
+  // array. If the file does not have an allowed extension, it is added to the `state.invalidFiles`
+  // array.
     const selectPictures = (e) => {
       let files = e.target.files;
 
@@ -262,13 +269,13 @@ export default defineComponent({
   methods: {
     save() {
       this.v$.$validate();
-      console.log(this.state);
       if (!this.v$.$error) {
-    
         // test
         http.post('/upload',{
           data:this.state.product
         }).then(res => {
+          this.$toast.success(`Hey! I'm here`);
+
           console.log(res);
         }).catch(err => {
           console.log(err);
